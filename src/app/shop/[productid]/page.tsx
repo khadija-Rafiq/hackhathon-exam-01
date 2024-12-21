@@ -9,13 +9,9 @@ import ShortSec from "@/components/ShortSec";
 import BreadCrumb from "@/components/BreadCrumb";
 
 // Adjust the type for params
-interface ProductDetailProps {
-  params: {
-    productid: string;
-  };
-}
 
-export default async function ProductDetail({ params }: ProductDetailProps) {
+
+export default async function ProductDetail(params: any ) {
   const data = secData.find((item: SecData) => item.id === params.productid);
 
   return (
